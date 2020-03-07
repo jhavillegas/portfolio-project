@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrap.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!--for carousel vr.3.6-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!--vr.3.4-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!--for js-->
+    <link rel="function" href="index.js"/>
+    <title>Jaren Villegas</title>
+    
+    <style>
+        /*for button*/
+        .button{
+            background-color: crimson;
+            color: floralwhite;
+        }
+        .dark-mode {
+          background-color: black;
+          color: white;
+        }
+
+        /*for title*/
+        .titulo{
+            font-family: Broadway;
+            font-size: 10vw;
+        }
+        .paragraph1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 1.5vw;
+        }
+        .sectitle{
+          font-family: Cooper Black;
+          font-size: 3vw;
+          color: crimson;
+        }
+        .firstitle{
+          font-family: Cooper Black;
+          color: seagreen;
+          font-size: 2.5vw;
+        }
+        /*carousel*/
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+          width: 50%;
+          margin: auto;
+        }
+        /* The grid: Four equal columns that floats next to each other */
+        .column {
+        float: left;
+        width: 25%;
+        padding: 10px;
+        }
+
+        /* Style the images inside the grid */
+        .column img {
+         opacity: 0.8;
+         cursor: pointer;
+        }
+
+        .column img:hover {
+          opacity: 1;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+         content: "";
+          display: table;
+         clear: both;
+        }
+
+        /* The expanding image container (positioning is needed to position the close button and the text) */
+        .container {
+          position: relative;
+          display: none;
+        }
+
+        /* Expanding image text */
+        #imgtext {
+          position: absolute;
+          bottom: 15px;
+          left: 15px;
+          color: white;
+          font-size: 20px;
+        }
+
+        /* Closable button inside the image */
+        .closebtn {
+          position: absolute;
+          top: 10px;
+          right: 15px;
+          color: white;
+          font-size: 35px;
+          cursor: pointer;
+        }
+        /* for footer */
+        .bg-3 { 
+        background-color: #ffffff;
+        color: #555555;
+        }
+        .bg-4 { 
+        background-color: #2f2f2f;
+       color: #fff;
+       padding-top: 20px;
+        }
+        .container-fluid {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        }
+      
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="nav-container-fluid">
+
+            <div class="navbar-hearder">
+                <a href="index.html" class="navbar-brand">Brasomon Craft</a>
+            </div>
+            <div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="dropdown-menu">More <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="https://www.facebook.com">Facebook</a></li>
+                          <li><a href="https://www.instagram.com">Instagram</a></li>
+                          <li><a href="https://www.twitter.com">Twitter</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        <form>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search">
+                <div class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                    <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+        <h2 class="titulo text-center">Brasomon Leather Craft</h2>
+        <p class="paragraph1 text-center" >Handcrafted genuine leather goodies, souvenirs and everything beautiful.</p>
+
+      <!--caruosel-->
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+      
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img class="accesories-center" src="img/accesories.jpg" alt="accesories">
+            <div class="carousel-caption">
+              <h3>ACCESORIES</h3>
+              <p>Leather accesories to decorate your stuffs.</p>
+            </div>
+          </div>
+      
+          <div class="item">
+            <img src="img/bags.jpg" alt="bags">
+            <div class="carousel-caption">
+              <h3>Leather Bags</h3>
+              <p>A leather fashion on the go Bags suitable for your fancy and vintage look.</p>
+            </div>
+          </div>
+      
+          <div class="item">
+            <img src="img/tools.jpg" alt="tools">
+            <div class="carousel-caption">
+              <h3>Leather Decorated Tools</h3>
+              <p>Beautiful handy leather tools that fits to your creativity.</p>
+            </div>
+          </div>
+      
+          <div class="item">
+            <img src="img/furniture.jfif" alt="furniture">
+            <div class="carousel-caption">
+              <h3>Leather on Furniture</h3>
+              <p>Interior your home to the next level with these leathers on furniture.</p>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!--end of carousel-->
+
+      <!--2nd title-->
+      <div>
+        <h2 class="firstitle text-center">WELCOME TO THE</h2>
+        <h2 class="sectitle text-center">Best Selling Leather Products</h2>
+      </div>
+
+
+      <!-- The grid: four columns -->
+    <div class="row">
+        <div class="column">
+            <img src="images/bag1.jpg" alt="bag1" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="images/bag2.JPG" alt="bag2" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="images/bag3.jfif" alt="bag3" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="images/bag4.jpg" alt="bag4" onclick="myFunction(this);">
+        </div>
+    </div>
+  
+    <!-- The expanding image container -->
+    <div class="container">
+        <!-- Close the image -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  
+        <!-- Expanded image -->
+        <img id="expandedImg" style="width:100%">
+  
+        <!-- Image text -->
+        <div id="imgtext"></div>
+  </div>
+
+  
+
+
+  <div class="text-center">
+    <button class="button" onclick="myFunction()">Dark Mode</button>
+
+    <!--for darkmode-->
+    <script>
+    function myFunction() {
+       var element = document.body;
+       element.classList.toggle("dark-mode");
+    }
+    </script>
+  </div>
+
+  <div>
+    <!--space-->
+  </div>
+
+  <div>
+  <footer class="container-fluid bg-4 text-center">
+    <p>Brasomon Leather Crafts <a href="https://web.facebook.com/brasomonleathercrafts/?_rdc=1&_rdr">www.brasomonfacebook.com</a></p> 
+    <p>Copyright 2020</p>
+    <p>All Rights Reserved</p>
+  </footer>
+</div>
+</body>
+</html>

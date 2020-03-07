@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrap.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!--for carousel-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!--vr.3.4-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+   <title>About</title>
+<style>
+
+/*for button*/
+.button{
+            background-color: crimson;
+            color: floralwhite;
+        }
+        .dark-mode {
+          background-color: black;
+          color: white;
+        }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+
+            <div class="navbar-hearder">
+                <a href="" class="navbar-brand">Brasomon Craft</a>
+            </div>
+            <div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">More <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="https://www.facebook.com">Facebook</a></li>
+                          <li><a href="https://www.instagram.com">Instagram</a></li>
+                          <li><a href="https://www.twitter.com">Twitter</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<div class="about-section">
+  <h1>Brasomon Leather Crafts</h1>
+  <p>Group of Company that supports the uprising Leather Fahion in the fabric industry.</p>
+  <p>Providing the best and quality leather products of all items.</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="avatar/jaren.jpg" alt="jaren" style="width:100%">
+      <div class="container">
+        <h2>Jaren Villegas</h2>
+        <p class="title">CEO & Founder</p>
+        <p>jarenvillegas01032000@gmail.com</p>
+        <p><button class="button" >Contact <a href="https://web.facebook.com/jharrenjhanjhan.peredavillegas"></a> </button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="avatar/jhajha.jpg" alt="jhajha" style="width:100%">
+      <div class="container">
+        <h2>Jhajha Villegas</h2>
+        <p class="title">Art Director</p>
+        <p>jarenvillegas01032000@gmail.com</p>
+        <p><button class="button" >Contact <a href="https://web.facebook.com/jharrenjhanjhan.peredavillegas"></a> </button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="avatar/jha.jpg" alt="jha" style="width:100%">
+      <div class="container">
+        <h2>Jha Villeag</h2>
+        <p class="title">Designer</p>
+        <p>jarenvillegas01032000@gmail.com</p>
+        <p><button class="button" >Contact <a href="https://web.facebook.com/jharrenjhanjhan.peredavillegas"></a> </button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="text-center">
+  <button class="button" onclick="myFunction()">Dark Mode</button>
+
+  <!--for darkmode-->
+  <script>
+  function myFunction() {
+     var element = document.body;
+     element.classList.toggle("dark-mode");
+  }
+  </script>
+</div>
+
+</body>
+</html>
